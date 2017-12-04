@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+
+			body{
+				perspective: 500px;
+				-webkit-perspective: 500px;
+				-ms-perspective: 500px;
+				-moz-perspective: 500px;
+			}
+			
+			#main{	
+				position: relative;
+				margin: 0 auto;
+				margin-top: 300px;
+				width: 100px;
+				height: 100px;		
+				animation: change 4s linear infinite running;
+				transform-style:preserve-3d;
+			}
+			
+			#main>div{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}	
+					
+			#main:hover #first{
+				transform: rotateY(90deg) translateZ(100px);
+			}
+			
+			#main:hover #second{
+				transform: rotateY(90deg) translateZ(-100px);
+			}
+			
+			#main:hover #third{
+				transform: translateZ(100px);
+			}
+			
+			#main:hover #four{
+				transform: translateZ(-100px);
+			}
+			
+			#main:hover #five{
+			   	transform: rotateY(90deg) translateZ(100px) translateY(150px);
+			}
+			
+			#main:hover #six{
+				transform: rotateY(90deg) translateZ(-100px) translateY(150px);
+			}
+			
+			#main:hover #seven{
+				transform:  translateZ(100px) translateY(150px);
+			}
+			
+			#main:hover #eight{
+				transform: translateZ(-100px) translateY(150px);
+			}
+			
+			#main:hover #nine{
+				transform: rotateY(90deg) translateZ(100px) translateY(-150px);
+			}
+			
+			#main:hover #ten{
+				transform: rotateY(90deg) translateZ(-100px) translateY(-150px);
+			}
+			
+			#main:hover #elevn{
+				transform: translateZ(100px) translateY(-150px);
+			}
+			
+			#main:hover #twoteen{
+			    transform: translateZ(-100px) translateY(-150px);
+			}
+			
+				
+			@keyframes change{
+				from{
+					transform: rotateY(0deg);
+				}
+				to{
+					transform: rotateY(360deg);
+				}
+			}					
+			
+			#first{		
+				transform: rotateY(90deg) translateZ(50px);		
+				transition: all 2s linear 2s;		
+			}
+		
+			#second{
+				transform: rotateY(90deg) translateZ(-50px);
+				transition: all 2s linear 2s;							
+			}
+			
+			#third{
+				transform: translateZ(50px);
+				transition: all 2s linear 2s;													
+			}
+			
+			#four{
+				transform: translateZ(-50px);
+				transition: all 2s linear 2s;					
+			}
+			
+			#five{		
+				transform: rotateY(90deg) translateZ(50px) translateY(100px);
+				transition: all 4s linear ;							
+			}
+		
+			#six{
+				transform: rotateY(90deg) translateZ(-50px) translateY(100px);		
+				transition: all 4s linear ;				
+			}
+			
+			#seven{
+				transform: translateZ(50px) translateY(100px);	
+				transition: all 4s linear ;								
+			}
+			
+			#eight{
+				transform: translateZ(-50px) translateY(100px);	
+				transition: all 4s linear ;			
+			}
+			
+			#nine{		
+				transform: rotateY(90deg) translateZ(50px) translateY(-100px);	
+				transition: all 4s linear ;					
+			}
+		
+			#ten{
+				transform: rotateY(90deg) translateZ(-50px) translateY(-100px); 
+				transition: all 4s linear;						
+			}
+			
+			#elevn{
+				transform: translateZ(50px) translateY(-100px);		
+				transition: all 4s linear ;								
+			}
+			
+			#twoteen{
+				transform: translateZ(-50px) translateY(-100px);	
+				transition: all 4s linear ;				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div id="first"></div>
+			<div id="second"></div>
+			<div id="third"></div>
+			<div id="four"></div>
+			<div id="five"></div>
+			<div id="six"></div>
+			<div id="seven"></div>
+			<div id="eight"></div>
+			<div id="nine"></div>
+			<div id="ten"></div>
+			<div id="elevn"></div>
+			<div id="twoteen"></div>
+		</div>
+	</body>
+</html>
