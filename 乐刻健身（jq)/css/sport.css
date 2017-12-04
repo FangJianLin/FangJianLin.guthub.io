@@ -1,0 +1,866 @@
+	
+	   /*全局*/
+	   
+	*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;	
+					
+			}
+				
+			body{
+				margin: 0 auto;
+			    max-width: 750px;
+			    min-width: 320px;
+			}
+			
+			#zong{
+				width: 100%;
+				height: 13.3rem;
+				background-color: #1d1c24;
+				position: relative;
+				overflow: hidden;
+			}
+			
+		    /*电池日期*/
+			
+			#head-date{
+				width: 100%;
+				height: 0.4rem;
+				background: url(img/head.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+									
+	/*移动	*/	
+			
+			   /*头部*/
+			  
+			.head-title{
+				width: 100%;
+				height: 1.1rem;
+				background:-webkit-linear-gradient(top,#1a191e,#323234);
+				padding: 0.3rem 0.3rem 0.2rem 0.3rem;
+				font-size: 0.36rem;
+				color: white;
+			}
+			
+			.head-title>div{
+				float: left;
+			}
+			
+			.head-title-first{
+				width: 1.5rem;
+				height: 0.5rem;
+				background: url(img/back.jpg) no-repeat center left;
+				background-size: 100% 100%;
+			}
+			
+			.head-title-second{
+				width: 2rem;
+				margin-left: 0.9rem;	
+				text-align: center;			
+			}
+			
+			.head-title-third{
+				margin-left: 2rem;				
+				width: 0.5rem;
+				height: 0.5rem;
+				background: url(img/dian.jpg) no-repeat scroll center center;
+				background-size: 100% 100%;
+			}
+				
+					
+		/*首页点击出现分页*/
+							
+			.yidong{
+				width: 100%;
+				position: absolute;
+				left: 0;				
+			}
+										
+			.choose-area{	
+				position: relative;					
+				width: 100%;			
+				background-color: #2f2e34;
+				padding: 0.3rem 0.35rem;
+				border-bottom: 0.01rem solid  #1d1c24;
+				font-size: 0.3rem;
+				color: white;
+			}
+			
+			.choose-area>input{
+				padding-left:0.2rem ;
+				padding: 0.1rem;
+				margin-left: 1rem;
+			    height: 0.28rem;
+			    width: 4rem;		    
+				border: none;
+				background: none;
+				border-bottom: 0.01rem solid ;		
+				font-size: 0.2rem;
+				color: white;
+			}
+			
+			.shuruzhi{
+				float: right;
+			}
+						
+			.white-right{
+				display: block;
+				float: right;
+				width: 0.2rem;
+				height: 0.3rem;
+				background: url(img/white-right.png) no-repeat; 
+				background-size: 100% 100%;
+			}
+			
+			.fenye{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 100%;		
+				display: none;
+			}
+		
+		
+			
+		/*会员卡*/	
+		
+		       /*头部图片*/
+		    
+		    #no-vip,#become-vip-comfirm,#on-vip{
+		    	width: 100%;
+		    	height: 100%;
+		    	display: none;
+		    }  
+		    	      
+		   .picture{
+		   	    position: relative;
+			   	width: 100%;
+			   	height: 3.5rem;
+		   }
+		   
+		   .pic{
+			   	z-index: 0;
+			   	position: absolute;
+			   	left: 0;
+			   	top: 0;
+		     	width: 100%;
+		   	    height: 100%;
+		   	    background: url(img/month-key.jpg) no-repeat;
+		   	    background-size: 100% 100%;
+		   }
+		   
+		   .mask{
+		   	 	position: absolute;
+			   	left: 0;
+			   	top: 0;
+			   	z-index: 1;
+			   	width: 100%;
+			   	height: 100%;
+			   	background-color: black;
+			   	opacity: 0.1;
+		   }
+		   
+		   #pic-font{
+		   	 	position: absolute;
+			   	left: 0;
+			   	top: 0;
+		   	    z-index: 2;
+			   	width: 100%;
+			   	height: 100%;
+			   	padding: 0.7rem 0.9rem;
+		   }
+		   
+		   #pic-font>p{
+		     	font-size: 0.3rem;
+		     	color: white;
+		    	line-height: 0.5rem;
+		   }
+		   
+		       /*会员选择区域*/
+		      
+		      
+		          /*初次会员*/
+		   .choose-area2{
+		    	position: relative;	
+		     	margin:0 auto ;
+		     	width: 7rem;		   	   							
+				background-color: #2f2e34;
+				padding: 0.3rem 1.2rem;			
+				font-size: 0.31rem;
+				border-bottom: 0.01rem solid  #1d1c24;
+				color: white;
+		   }
+		   	   									   
+		   .choose-area3{
+		   	   margin: 0 auto;
+		   	   margin-top: 0.01rem;
+		       border-bottom: 0.01rem solid  #1d1c24;
+		   	   width: 7rem;		  
+		   }
+		   		   		   		   
+		   .no-choose-span{
+		   	   display: block;
+		   	   width: 0.3rem;
+		   	   height: 0.3rem;
+		   	   border: 0.01rem solid white;
+		   	   border-radius: 50%;
+		   }
+		   
+		   .on-choose-span{	   	  
+		   	   border: none;
+		   	   background-color: #e75813;
+		   }
+		   
+		   .choose-area2>span{
+		   	   display: inline-block;		   	   
+		   	   margin-left: 0.3rem;
+		   }	
+		   
+		   #tishiyu{
+		      margin-top: 0.3rem;
+		   	  margin-left: 0.8rem;
+		   	  color: white;
+		   }
+		   
+		    #tishiyu>span:first-child{
+		   	  font-size: 0.24rem;
+		   }	
+		   	     
+		    #tishiyu>span:last-child{
+		   	  margin-left: 0.1rem;
+		   	  font-size: 0.22rem;
+		   }	   	  
+		   
+		   #buy,#continue-vip{
+				margin: 0 auto;
+				margin-top: 0.3rem;
+				width: 6.8rem;
+				height: 0.8rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.2rem;			
+			}
+			
+			#buy{
+				margin-top: 0.1rem;
+			}
+			
+			#no-pay{
+				margin: 0 auto;
+				margin-top: 0.3rem;
+				width: 3rem;
+				height: 0.6rem;
+				background-color:#e75813 ;
+				border-radius: 0.1rem;	
+				text-align: center;
+				padding-top: 0.1rem;
+				opacity: 0;			
+			}
+			
+			 /*运动提示*/	
+			
+			#get-password{
+				height: 0.9rem;
+				width: 100%;
+				background-color:#2f2e34;
+				color: #be6035;
+				font-size: 0.3rem;
+				text-align: center;
+				padding: 0.2rem;
+			}
+			
+			#sport-tishi{
+				background-color:#2f2e34;
+				padding: 0.2rem 0.3rem;
+				line-height: 0.5rem;
+				font-size: 0.24rem;
+				margin-top: 0.5rem;
+			}
+			
+			#sport-tishi>div{
+				font-size: 0.3rem;
+				color: #be6035;
+			}
+			
+			#sport-tishi>p:nth-child(odd){
+				margin-left: 0.3rem;
+			}
+			
+			#sport-tishi>p:nth-child(even)>span:last-child{
+				margin-left: 0.1rem;
+			}
+		    	    
+		  	/*以是会员的界面*/
+		  	
+		  	.vip-imformation{
+		  		color: #dd5f23;
+		  		float: right;
+		  	}
+		  	
+		  	.mask2{
+		   	 	position: absolute;
+			   	left: 0;
+			   	top: 0;
+			   	z-index: 1;
+			   	width: 100%;
+			   	height: 100%;
+			   	background-color: white;
+			   	opacity: 0.3;
+		   }
+		   
+		   #vip-card{
+		   	margin-left: 1rem;
+		   	margin-top: 0.4rem;
+		   	position: absolute;	   
+		   	width: 5.5rem;
+		   	height: 2.9rem;	  
+		   	background: url(img/kapian_03.jpg) no-repeat;
+		   	background-size: 100% 100%;
+		   	z-index: 3;
+		   	border-radius: 0.3rem;
+		   }
+		  		
+		  		
+		/*健康管理*/
+		
+		
+			#comfirm{
+				margin: 0 auto;
+				margin-top: 1.3rem;
+				width: 3.5rem;
+				height: 0.5rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.05rem;
+				opacity: 0;
+			}
+						
+			#store{
+				margin: 0 auto;
+				margin-top: 0.5rem;
+				width: 6.8rem;
+				height: 0.8rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.2rem;			
+			}
+								
+		  /*问答环节*/
+			
+			.question{
+				height: 0.7rem;
+			    width: 100%;
+			    padding: 0.15rem 0.3rem;
+			    color: #ff7736;
+			    font-size: 0.26rem;
+			    background-color: #2f2e34;
+			}
+			
+			.question>span{
+				display: block;
+				float: left;
+			}		
+									
+			.question>span:first-child{
+			    width: 0.3rem;	    
+				margin-right: 0.2rem;
+			}
+									
+			.ansewer{
+			    width: 100%;
+			    height: 1.3rem;
+			    padding: 0.15rem 0.3rem;
+			    color: white;
+			    font-size: 0.26rem;
+			    line-height: 0.5rem;
+			}
+			
+			.ansewer>span{
+				display: block;
+				float: left;
+			}			
+														
+			.ansewer>span:first-child{
+			    width: 0.3rem;	    
+				margin-right: 0.2rem;
+			}
+			
+			.ansewer>span:last-child{
+				width: 6.3rem;
+			}
+			
+			/*课程*/
+			
+			/*没有课程的界面*/
+			
+			#no-sport-p{		
+				 margin: 0 auto;
+				 margin-top: 1rem;
+			     width: 6rem;
+			     height: 4rem;
+			     font-size: 0.4rem;
+			     color: #e75813;
+			     text-align: center;
+			     line-height: 0.8rem;
+			     display: none;
+			}
+				
+			.add-sport-btn1{
+				margin: 0 auto;
+				margin-top: 0.3rem;
+				width: 6.8rem;
+				height: 0.8rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.2rem;	
+			}	
+			
+			.add-sport-btn2{	
+				width: 100%;
+				height: 1rem;
+				background-color:#e75813;				
+				text-align: center;
+				padding-top: 0.2rem;
+				position: absolute;
+				top: 12rem;
+			}	
+			
+			
+			
+			/*一周课程选择*/	
+			
+				
+			#my-course{
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+				    			   	 	   
+		   #week-sportscourse{
+			   	width: 100%;
+			   	height: 100%;
+			  	position: absolute;		   		   			
+			   	left: 100%;	
+			   	top: 0;  
+		   }	
+	     
+	       #sport-table{
+	       	 width: 100%;
+	       	 height: 10rem;
+	       	 background-color: #2f2e34;
+	       }
+		   
+		   .course-list{		    		     
+		     	width: 100%;	   	   							
+				background-color: #2f2e34;
+				padding: 0.3rem 0.3rem;
+				font-size: 0.31rem;
+				color: white;
+				border: 0.01rem solid #1d1c24;
+		   }	
+		   
+		   .course-list>div{
+		   	  display: inline-block;
+		   }  
+		   
+		   .renweiman{
+		   	   width: 1.2rem;
+		   	   height: 0.5rem;
+		   	   background-color: #e75813;
+		   	   text-align: center;
+		   }	
+		   
+		   .renyiman{
+		   	   background-color: #4a8b60;
+		   }  
+		   
+		   
+		   /*选择运动简介*/ 
+		   
+		   
+		   #sport-imformation{
+			   	width: 100%;
+			   	height: 100%;
+		   	    display: none;
+		   	    position: absolute;
+		   	    left: 100%;
+		   	    top: 0;
+		   }
+		   
+		   #sport-imformation-basic{	   	    
+			   	margin: 0 auto;
+			   	margin-top: 0.4rem;
+			   	width: 7rem;
+			   	background-color: #2f2e34;			   	
+		   }
+		   
+		   #sport-imformation-basic>div{
+		   	    width: 7rem;
+		   	    height: 1.8rem;
+		   	    border: 0.01rem solid #1d1c24;
+		   	    padding: 0.2rem 0.2rem;
+		   	    font-size: 0.24rem;
+		   	    color: white;
+		   }
+		   
+		   #sport-imformation-basic>div>p{
+		   	  margin-bottom: 0.1rem;
+		   }
+		   
+		   #sport-imformation-basic>div:first-child>p:first-child{
+			   	color: #ff7736;
+			   	font-size: 0.3rem;
+			   	margin-bottom: 0.2rem;
+		   }
+		   
+		   #sport-imformation-basic>div:first-child>p>span:first-child{
+		   	    margin-right: 0.2rem;
+		   }
+		   
+		   #sport-imformation-basic>div:last-child>p:first-child{		   	
+			   	font-size: 0.3rem;
+			   	margin-bottom: 0.2rem;
+		   }
+		    
+		   #sport-imformation-basic>div:last-child>p:last-child{
+		   	  line-height: 0.4rem;
+		   }
+		   	 
+		    #buy-now{
+		    	width: 1.5rem;
+		    	height: 0.7rem;
+		    	background-color: #e75813;
+		    	position: absolute;
+		    	text-align: center;
+		    	left: 5.2rem;
+		    	top: 0.5rem;
+		    	padding-top:0.2rem;
+		    }	
+		      
+		    #no-chat{
+		    	display: none;
+		    	margin: 0 auto;
+		    	margin-top: 0.5rem;
+		        width: 7rem;
+		        height: 1rem;
+		        background-color: #2f2e34;
+		        padding: 0.3rem;
+		        text-align: center;	    
+		    }   
+		      
+		  
+		    
+		    /*我的课程状况*/	  
+		    
+		    
+		    #course-show{
+		    	width: 100%;
+		    	color: white;
+		    	font-size: 0.24rem;	 
+		    	display: none;		    		      			    	
+		    }
+		    
+		    #course-show>ul{
+		    	width: 100%;	
+		    	height: 0.8rem;
+		    	background-color: #2f2e34;	    	    	
+		    }
+		    
+		    #course-show>ul>li{
+		    	display: inline-block;
+		    	height: 0.8rem;
+		    	list-style: none;
+		    	width: 24.2%;	
+		    	text-align: center;	 
+		    	padding-top: 0.2rem;   	
+		    }
+		    
+		    #course-show>div{
+		    	width: 100%;
+		    	height: 3rem;
+		    	display: none;	    	
+		    }
+		   	    		    
+		    .on-my-course-information{
+		    	border-bottom: 0.02rem solid #e75813;
+		    	color: #e75813;
+		    }
+		    
+		    .no-class{
+		    	margin: 0 auto;
+		    	width: 7rem;
+		    	height: 1rem;
+		    	margin-top: 0.3rem;
+		    	text-align: center;  
+		    	background-color: #2f2e34;
+		    	font-size: 0.3rem;	 
+		    	padding-top: 0.3rem; 
+		    	display: none;
+		    }
+		    
+		    
+		        /*单项课程样式*/
+		       
+		       
+		    .course-list-style{
+		    	width: 7rem;
+		    	margin: 0 auto;
+		    	background-color: #2f2e34;
+		    	height: 2rem;
+		    	margin-top: 0.3rem;
+		    	padding: 0.2rem 0.2rem;
+		    }
+		    
+		    .course-list-style>div{
+		     	float: left;
+		     }
+		    
+		    .course-list-style>div:first-child{
+		    	width: 1.6rem;
+		    	height: 1.6rem;
+		    	background: url(img/course-bg.jpg) no-repeat;
+		    	background-size: 100% 100%;	
+		    	color: white;		       	
+		    }
+		    
+		    .course-list-style>div:first-child>p:first-child{
+		    	font-size: 0.24rem;
+		        padding-left:0.2rem ;
+		        padding-top:0.05rem;
+		    }
+		    
+		    .course-list-style>div:first-child>p:nth-child(2){
+		    	font-size: 0.6rem;
+		    	text-align: center;
+		    }
+		    
+		    .course-list-style>div:first-child>p:last-child{
+		    	font-size: 0.24rem;
+		    	padding-left: 0.07rem;	
+		    }
+		    
+		    .course-list-style>div:nth-child(2){
+		    	margin-left:0.3rem ;
+		    }	
+		    
+		    .course-list-style>div:nth-child(2)>p{
+		    	font-size: 0.24remrem;	    	
+		    	color: white;
+		    	margin-bottom: 0.15rem;
+		    }	
+		    		    
+		    .course-list-style>div:nth-child(2)>p:first-child{
+		    	font-size: 0.3rem;	    	
+		    	color: #f66620;
+		    	margin-bottom: 0.2rem;	     	
+		    }
+		    
+		    
+		    /*评价框*/
+		   
+		    
+		    #pingjiajiemian{
+		    	width: 100%;
+		    	height: 100%;
+		    	position: absolute;
+		    	left: 100%;
+		    	display: none;
+		    	top: 0;
+		    }
+		    		    
+		    .pingjia{
+		    	width: 1.5rem;
+		    	height: 0.7rem;
+		    	margin-left: 1.3rem;
+		    	margin-top: 0.45rem;
+		    	background-color:#4a8b60 ;
+		    	font-size: 0.3rem;
+		    	text-align: center;
+		    	padding-top: 0.15rem;
+		    }	
+		    
+		  #submit{
+				margin: 0 auto;
+				margin-top: 0.3rem;
+				width: 6.8rem;
+				height: 0.8rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.2rem;	
+			}	
+			
+			.pingjiakuang{
+				width: 100%;
+				height: 0.8rem;
+				padding: 0.1rem 0.2rem ;
+				color: white;
+				font-size: 0.28rem;	
+				background-color: #2f2e34;	
+				border-bottom: 0.01rem solid #1d1c24;		
+			} 
+			
+			.pingjiakuang>div{
+				float: left;
+			}
+								
+			.pingjia-xinxin>img{
+				width: 0.45rem;
+				height: 0.45rem;
+				margin-left: 0.1rem;				
+			}  
+			
+			.liuyankuang{
+				margin-top: 0.3rem;
+				width: 100%;
+				height: 2.5rem;
+				background-color: #2f2e34;
+				padding: 0.2rem 0.2rem;
+			}
+			
+			.liuyankuang>textarea{
+				background: none;
+				border: none;
+				width: 7rem;
+				height: 2rem;
+				color: white;
+				font-size:0.28rem;
+			}	
+			
+		    .myself-div{
+		    	height: 1.7rem;	  
+		    	margin-bottom: 0.4rem;  	
+		    }	
+		    
+		    .pull-right{
+		    	float: right;
+		    }   
+		    
+		    
+		    /*个人信息*/
+		    
+		    
+		    .person-information{
+		    	width: 5rem;
+		    	float: left;
+		    	padding: 0rem 0.1rem;
+		    }
+		    
+		    .person-information>div>p:first-child{
+		    	margin-top: 0.1rem;
+		    	font-size: 0.3rem;
+		    	margin-left: 1.5rem;
+		    }
+		    
+		    .person-information>div>p:last-child{
+		    	margin-top: 0.1rem;
+		    	font-size: 0.24rem;
+		    	margin-left: 1.5rem;
+		    }
+		    
+		    .person{
+		    	position: relative;					
+				width: 100%;			
+				background-color: #2f2e34;
+				padding: 0.3rem 0.35rem;
+				border-bottom: 0.01rem solid  #1d1c24;
+				font-size: 0.3rem;
+				color: white;
+		    }
+		  	  
+		  	  
+		  	       /*有评论*/
+		         
+		    .chatting{	   	    
+			   	margin: 0 auto;
+			   	margin-top: 0.4rem;
+			   	width: 7rem;
+			   	background-color: #2f2e34;		
+			   	padding: 0.2rem 0.2rem;   	
+		    }
+		    
+		    .chatting>p:first-child{
+		    	font-size: 0.3rem;	    	
+		    }
+		    
+		    .chatting>div{
+		        margin-top: 0.1rem;
+		    }	    
+		    
+		    .chatting>div>span{
+		    	font-size: 0.24rem;
+		    	margin-left: 0.3rem;
+		    	margin-top: -0.2rem;
+		    } 
+		    
+		    .chatting>div>div{
+		    	float: right;
+		    }
+		    
+		    .chatting>p:last-child{
+		    	margin-top: 0.1rem;
+		    	font-size: 0.2rem;
+		    	line-height: 0.4rem;
+		    }
+		    
+		    #week-date{
+		    	width: 100%;
+		    	height: 3rem;
+		    	margin-bottom: 0.3rem;
+		    	background-color: #2f2e34;
+		    	padding-top: 0.2rem;
+		    }
+		    
+		    .sport-address{
+		    	margin: 0 auto;
+		    	width: 5.5rem;
+		    	height:1rem ;
+		    	border-radius: 0.5rem;
+		    	border: 0.01rem solid #5d5d60;	   
+		    	padding: 0.2rem 0.3rem; 	
+		    }
+		    
+		    .sport-address>img{
+		    	float: left;
+		    }
+		    
+		    .sport-address>div{
+		    	margin-left: 0.6rem;
+		    }
+		   	
+		   	.date{
+		   		width: 100%;		   		
+		   	}	
+		   	
+		   	.date>ul{
+		   		width: 100%;
+		   		padding: 0.25rem 0;
+		   		margin-bottom: 0.3rem;
+		   	}
+		   	
+		   	.date>ul>li{
+		   		text-align: center;
+		   		list-style: none;
+		   		float: left;		   		
+		   		width: 0.5rem;
+		   		height: 0.5rem;
+		   		margin-left: 0.28rem;
+		   	    margin-right: 0.28rem;   
+		   	    font-size: 0.26rem;	
+		   	    line-height: 0.5rem;
+		   	    border-radius:50% ;	
+		   	}    
+		   	
+		   	.color-orange{
+		   		color: #E75813;
+		   	}
+		   	
+		   	.bgcolor-orange{
+		   		background-color: #E75813;
+		   	}

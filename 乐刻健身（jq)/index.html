@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			body{
+				margin: 0 auto;
+			    max-width: 750px;
+			    min-width: 320px;
+			}
+			
+			#zong{
+				width: 100%;
+				height: 13.5rem;
+				background-color: #1d1c24;
+				position: relative;
+				overflow: hidden;
+			}
+			
+		    /*电池日期*/
+			
+			#head-date{
+				width: 100%;
+				height: 0.4rem;
+				background: url(img/head.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+									
+	/*移动	*/	
+			
+			   /*头部*/
+			.head-title{
+				width: 100%;
+				height: 1.1rem;
+				background-color: #2a2a2e;
+				padding: 0.3rem 0.3rem 0.2rem 0.3rem;
+				font-size: 0.36rem;
+				color: white;
+			}
+			
+			.head-title>div{
+				float: left;
+			}
+			
+			.head-title-first{
+				width: 1.5rem;
+				height: 0.5rem;
+				background: url(img/back.jpg) no-repeat center left;
+				background-size: 100% 100%;
+			}
+			
+			.head-title-second{
+				width: 2rem;
+				margin-left: 0.9rem;	
+				text-align: center;			
+			}
+			
+			.head-title-third{
+				margin-left: 2rem;				
+				width: 0.5rem;
+				height: 0.5rem;
+				background: url(img/dian.jpg) no-repeat scroll center center;
+				background-size: 100% 100%;
+			}
+					
+		/*点击产生不同效果*/
+							
+			.yidong{
+				width: 100%;
+				position: absolute;
+				left: 0;				
+			}
+										
+			.choose-area{	
+				position: relative;					
+				width: 100%;			
+				background-color: #2f2e34;
+				padding: 0.3rem 0.35rem;
+				border-bottom: 0.01rem solid  #1d1c24;
+				font-size: 0.3rem;
+				color: white;
+			}
+			
+			.choose-area>input{
+				padding-left:0.2rem ;
+				padding: 0.1rem;
+				margin-left: 1rem;
+			    height: 0.28rem;
+			    width: 4rem;		    
+				border: none;
+				background: none;
+				border-bottom: 0.01rem solid ;		
+				font-size: 0.2rem;
+				color: white;
+			}
+			
+			.shuruzhi{
+				float: right;
+			}
+						
+			.white-right{
+				display: block;
+				float: right;
+				width: 0.2rem;
+				height: 0.3rem;
+				background: url(img/white-right.png) no-repeat; 
+				background-size: 100% 100%;
+			}
+			
+			.fenye{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 100%;		
+				display: none;
+			}
+			
+		/*会员卡*/	
+		       /*中部图片*/
+		    
+		    #no-vip,#become-vip-comfirm,#on-vip{
+		    	width: 100%;
+		    	height: 100%;
+		    	display: none;
+		    }  
+		    	      
+		   .picture{
+		   	    position: relative;
+			   	width: 100%;
+			   	height: 3.5rem;
+		   }
+		   
+		   .pic{
+			   	z-index: 0;
+			   	position: absolute;
+			   	left: 0;
+			   	top: 0;
+		     	width: 100%;
+		   	    height: 100%;
+		   	    background: url(img/month-key.jpg) no-repeat;
+		   	    background-size: 100% 100%;
+		   }
+		   
+		   .mask{
+		   	 	position: absolute;
+			   	left: 0;
+			   	top: 0;
+			   	z-index: 1;
+			   	width: 100%;
+			   	height: 100%;
+			   	background-color: black;
+			   	opacity: 0.1;
+		   }
+		   
+		   #pic-font{
+		   	 	position: absolute;
+			   	left: 0;
+			   	top: 0;
+		   	    z-index: 2;
+			   	width: 100%;
+			   	height: 100%;
+			   	padding: 0.7rem 0.9rem;
+		   }
+		   
+		   #pic-font>p{
+		     	font-size: 0.3rem;
+		     	color: white;
+		    	line-height: 0.5rem;
+		   }
+		   
+		       /*会员选择区域*/
+		          /*初次会员*/
+		   .choose-area2{
+		    	position: relative;	
+		     	margin:0 auto ;
+		     	width: 7rem;		   	   							
+				background-color: #2f2e34;
+				padding: 0.3rem 1.2rem;			
+				font-size: 0.31rem;
+				color: white;
+		   }
+		   	   									   
+		   .choose-area3{
+		   	   margin: 0 auto;
+		       border-bottom: 0.01rem solid  #1d1c24;
+		   	   width: 7rem;		  
+		   }
+		   		   		   		   
+		   .no-choose-span{
+		   	   display: block;
+		   	   width: 0.3rem;
+		   	   height: 0.3rem;
+		   	   border: 0.01rem solid white;
+		   	   border-radius: 50%;
+		   }
+		   
+		   .on-choose-span{	   	  
+		   	   border: none;
+		   	   background-color: #e75813;
+		   }
+		   
+		   .choose-area2>span{
+		   	   display: inline-block;		   	   
+		   	   margin-left: 0.3rem;
+		   }	
+		   
+		   #tishiyu{
+		     	margin-top: 0.3rem;
+		   	  margin-left: 0.8rem;
+		   	  color: white;
+		   }
+		   
+		    #tishiyu>span:first-child{
+		   	  font-size: 0.24rem;
+		   }	
+		   	     
+		    #tishiyu>span:last-child{
+		   	  margin-left: 0.1rem;
+		   	  font-size: 0.22rem;
+		   }	   	  
+		   
+		   #buy,#continue-vip{
+				margin: 0 auto;
+				margin-top: 0.3rem;
+				width: 6.8rem;
+				height: 0.8rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.2rem;			
+			}
+			
+			#no-pay{
+				margin: 0 auto;
+				margin-top: 0.3rem;
+				width: 3rem;
+				height: 0.6rem;
+				background-color:#e75813 ;
+				border-radius: 0.1rem;	
+				text-align: center;
+				padding-top: 0.1rem;
+				opacity: 0;			
+			}
+			
+			/*运动提示*/	
+			#get-password{
+				height: 0.9rem;
+				width: 100%;
+				background-color:#2f2e34;
+				color: #be6035;
+				font-size: 0.3rem;
+				text-align: center;
+				padding: 0.2rem;
+			}
+			
+			#sport-tishi{
+				background-color:#2f2e34;
+				padding: 0.2rem 0.3rem;
+				line-height: 0.5rem;
+				font-size: 0.24rem;
+				margin-top: 0.5rem;
+			}
+			
+			#sport-tishi>div{
+				font-size: 0.3rem;
+				color: #be6035;
+			}
+			
+			#sport-tishi>p:nth-child(odd){
+				margin-left: 0.3rem;
+			}
+			
+			#sport-tishi>p:nth-child(even)>span:last-child{
+				margin-left: 0.1rem;
+			}
+		    	    
+		  	/*以是会员*/
+		  	
+		  	.vip-imformation{
+		  		color: #dd5f23;
+		  		float: right;
+		  	}
+		  	
+		  	.mask2{
+		   	 	position: absolute;
+			   	left: 0;
+			   	top: 0;
+			   	z-index: 1;
+			   	width: 100%;
+			   	height: 100%;
+			   	background-color: white;
+			   	opacity: 0.3;
+		   }
+		   
+		   #vip-card{
+		   	margin-left: 1rem;
+		   	margin-top: 0.4rem;
+		   	position: absolute;	   
+		   	width: 5.5rem;
+		   	height: 2.9rem;	  
+		   	background: url(img/kapian_03.jpg) no-repeat;
+		   	background-size: 100% 100%;
+		   	z-index: 3;
+		   	border-radius: 0.3rem;
+		   }
+		  		
+		/*健康管理*/
+			#comfirm{
+				margin: 0 auto;
+				margin-top: 1.3rem;
+				width: 3.5rem;
+				height: 0.5rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.05rem;
+				opacity: 0;
+			}
+						
+			#store{
+				margin: 0 auto;
+				margin-top: 0.5rem;
+				width: 6.8rem;
+				height: 0.8rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.2rem;			
+			}
+								
+		/*问答环节*/
+			
+			.question{
+				height: 0.7rem;
+			    width: 100%;
+			    padding: 0.15rem 0.3rem;
+			    color: #ff7736;
+			    font-size: 0.26rem;
+			    background-color: #2f2e34;
+			}
+			
+			.question>span{
+				display: block;
+				float: left;
+			}		
+									
+			.question>span:first-child{
+			    width: 0.3rem;	    
+				margin-right: 0.2rem;
+			}
+									
+			.ansewer{
+			    width: 100%;
+			    height: 1.3rem;
+			    padding: 0.15rem 0.3rem;
+			    color: white;
+			    font-size: 0.26rem;
+			    line-height: 0.5rem;
+			}
+			
+			.ansewer>span{
+				display: block;
+				float: left;
+			}			
+														
+			.ansewer>span:first-child{
+			    width: 0.3rem;	    
+				margin-right: 0.2rem;
+			}
+			
+			.ansewer>span:last-child{
+				width: 6.3rem;
+			}
+			
+			/*课程*/
+			
+			/*没有课程*/
+			
+			#no-sport-p{		
+				 margin: 0 auto;
+				 margin-top: 1rem;
+			     width: 6rem;
+			     height: 4rem;
+			     font-size: 0.4rem;
+			     color: #e75813;
+			     text-align: center;
+			     line-height: 0.8rem;
+			     display: none;
+			}
+				
+			.add-sport-btn1{
+				margin: 0 auto;
+				margin-top: 0.3rem;
+				width: 6.8rem;
+				height: 0.8rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.2rem;	
+			}	
+			
+			.add-sport-btn2{	
+				width: 100%;
+				height: 0.8rem;
+				background-color:#e75813;				
+				text-align: center;
+				padding-top: 0.2rem;
+				position: absolute;
+				top:12.2rem;
+			}	
+			
+			/*一周课程*/		
+			#my-course{
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+				    			   	 	   
+		   #week-sportscourse{
+			   	width: 100%;
+			   	height: 100%;
+			  	position: absolute;		   		   			
+			   	left: 100%;	
+			   	top: 0;  
+		   }	
+	     
+	       #sport-table{
+	       	 width: 100%;
+	       	 height: 10rem;
+	       	 background-color: #2f2e34;
+	       }
+		   
+		   .course-list{		    		     
+		     	width: 100%;	   	   							
+				background-color: #2f2e34;
+				padding: 0.3rem 0.3rem;
+				font-size: 0.31rem;
+				color: white;
+				border: 0.01rem solid #1d1c24;
+		   }	
+		   
+		   .course-list>div{
+		   	  display: inline-block;
+		   }  
+		   
+		   .renweiman{
+		   	   width: 1.2rem;
+		   	   height: 0.5rem;
+		   	   background-color: #e75813;
+		   	   text-align: center;
+		   }	
+		   
+		   .renyiman{
+		   	   background-color: #4a8b60;
+		   }  
+		   
+		   /*运动简介*/ 
+		   
+		   #sport-imformation{
+			   	width: 100%;
+			   	height: 100%;
+		   	    display: none;
+		   	    position: absolute;
+		   	    left: 100%;
+		   	    top: 0;
+		   }
+		   
+		   #sport-imformation-basic{	   	    
+			   	margin: 0 auto;
+			   	margin-top: 0.4rem;
+			   	width: 7rem;
+			   	background-color: #2f2e34;			   	
+		   }
+		   
+		   #sport-imformation-basic>div{
+		   	    width: 7rem;
+		   	    height: 1.8rem;
+		   	    border: 0.01rem solid #1d1c24;
+		   	    padding: 0.2rem 0.2rem;
+		   	    font-size: 0.24rem;
+		   	    color: white;
+		   }
+		   
+		   #sport-imformation-basic>div>p{
+		   	  margin-bottom: 0.1rem;
+		   }
+		   
+		   #sport-imformation-basic>div:first-child>p:first-child{
+			   	color: #ff7736;
+			   	font-size: 0.3rem;
+			   	margin-bottom: 0.2rem;
+		   }
+		   
+		   #sport-imformation-basic>div:first-child>p>span:first-child{
+		   	    margin-right: 0.2rem;
+		   }
+		   
+		   #sport-imformation-basic>div:last-child>p:first-child{		   	
+			   	font-size: 0.3rem;
+			   	margin-bottom: 0.2rem;
+		   }
+		    
+		   #sport-imformation-basic>div:last-child>p:last-child{
+		   	  line-height: 0.4rem;
+		   }
+		   	 
+		    #buy-now{
+		    	width: 1.5rem;
+		    	height: 0.7rem;
+		    	background-color: #e75813;
+		    	position: absolute;
+		    	text-align: center;
+		    	left: 5.2rem;
+		    	top: 0.5rem;
+		    	padding-top:0.2rem;
+		    }	
+		      
+		    #no-chat{
+		    	display: none;
+		    	margin: 0 auto;
+		    	margin-top: 0.5rem;
+		        width: 7rem;
+		        height: 1rem;
+		        background-color: #2f2e34;
+		        padding: 0.3rem;
+		        text-align: center;	    
+		    }   
+		    
+		    /*我的课程状况*/	  
+		    #course-show{
+		    	width: 100%;
+		    	color: white;
+		    	font-size: 0.24rem;	 
+		    	display: none;		    		      			    	
+		    }
+		    
+		    #course-show>ul{
+		    	width: 100%;	
+		    	height: 0.8rem;
+		    	background-color: #2f2e34;	    	    	
+		    }
+		    
+		    #course-show>ul>li{
+		    	display: inline-block;
+		    	height: 0.8rem;
+		    	list-style: none;
+		    	width: 24.2%;	
+		    	text-align: center;	 
+		    	padding-top: 0.2rem;   	
+		    }
+		    
+		    #course-show>div{
+		    	width: 100%;
+		    	height: 3rem;
+		    	display: none;	    	
+		    }
+		   	    		    
+		    .on-my-course-information{
+		    	border-bottom: 0.02rem solid #e75813;
+		    	color: #e75813;
+		    }
+		    
+		    .no-class{
+		    	margin: 0 auto;
+		    	width: 7rem;
+		    	height: 1rem;
+		    	margin-top: 0.3rem;
+		    	text-align: center;  
+		    	background-color: #2f2e34;
+		    	font-size: 0.3rem;	 
+		    	padding-top: 0.3rem; 
+		    	display: none;
+		    }
+		    
+		    
+		        /*单项课程样式*/
+		    .course-list-style{
+		    	width: 7rem;
+		    	margin: 0 auto;
+		    	background-color: #2f2e34;
+		    	height: 2rem;
+		    	margin-top: 0.3rem;
+		    	padding: 0.2rem 0.2rem;
+		    }
+		    
+		    .course-list-style>div{
+		     	float: left;
+		     }
+		    
+		    .course-list-style>div:first-child{
+		    	width: 1.6rem;
+		    	height: 1.6rem;
+		    	background: url(img/course-bg.jpg) no-repeat;
+		    	background-size: 100% 100%;	
+		    	color: white;		       	
+		    }
+		    
+		    .course-list-style>div:first-child>p:first-child{
+		    	font-size: 0.24rem;
+		        padding-left:0.2rem ;
+		        padding-top:0.05rem;
+		    }
+		    
+		    .course-list-style>div:first-child>p:nth-child(2){
+		    	font-size: 0.6rem;
+		    	text-align: center;
+		    }
+		    
+		    .course-list-style>div:first-child>p:last-child{
+		    	font-size: 0.24rem;
+		    	padding-left: 0.07rem;	
+		    }
+		    
+		    .course-list-style>div:nth-child(2){
+		    	margin-left:0.3rem ;
+		    }	
+		    
+		    .course-list-style>div:nth-child(2)>p{
+		    	font-size: 0.24remrem;	    	
+		    	color: white;
+		    	margin-bottom: 0.15rem;
+		    }	
+		    		    
+		    .course-list-style>div:nth-child(2)>p:first-child{
+		    	font-size: 0.3rem;	    	
+		    	color: #f66620;
+		    	margin-bottom: 0.2rem;	     	
+		    }
+		    
+		    #pingjiajiemian{
+		    	width: 100%;
+		    	height: 100%;
+		    	position: absolute;
+		    	left: 100%;
+		    	display: none;
+		    	top: 0;
+		    }
+		    		    
+		    .pingjia{
+		    	width: 1.5rem;
+		    	height: 0.7rem;
+		    	margin-left: 1.3rem;
+		    	margin-top: 0.45rem;
+		    	background-color:#4a8b60 ;
+		    	font-size: 0.3rem;
+		    	text-align: center;
+		    	padding-top: 0.15rem;
+		    }	
+		    
+		  #submit{
+				margin: 0 auto;
+				margin-top: 0.3rem;
+				width: 6.8rem;
+				height: 0.8rem;
+				background-color:#e75813 ;
+				border-radius: 0.2rem;	
+				text-align: center;
+				padding-top: 0.2rem;	
+			}	
+			
+			.pingjiakuang{
+				width: 100%;
+				height: 0.8rem;
+				padding: 0.1rem 0.2rem ;
+				color: white;
+				font-size: 0.28rem;	
+				background-color: #2f2e34;	
+				border-bottom: 0.01rem solid #1d1c24;		
+			} 
+			
+			.pingjiakuang>div{
+				float: left;
+			}
+								
+			.pingjia-xinxin>img{
+				width: 0.45rem;
+				height: 0.45rem;
+				margin-left: 0.1rem;				
+			}  
+			
+			.liuyankuang{
+				margin-top: 0.3rem;
+				width: 100%;
+				height: 2.5rem;
+				background-color: #2f2e34;
+				padding: 0.2rem 0.2rem;
+			}
+			
+			.liuyankuang>textarea{
+				background: none;
+				border: none;
+				width: 7rem;
+				height: 2rem;
+				color: white;
+				font-size:0.28rem;
+			}	
+			
+				    
+		</style>
+		<script type="text/javascript" src="js/fontsizeset.js" ></script>
+	    <script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	</head>
+	<body>
+		
+		<div id="zong">		
+			<div id="head-date"></div>
+							
+						     <!--移动部分-->
+							
+			<div class="yidong">  
+				
+				             <!--头部-->
+			   
+			   <div class="head-title">
+			   	    <div class="head-title-first"></div>
+			   	    <div class="head-title-second">个人中心</div>
+			   	    <div class="head-title-third"></div>
+			   </div>
+			   
+			                <!--选择对象-->
+				
+			   <div class="choose-area" style="margin-top: 2rem;"><span>我的课程</span><span class="white-right"></span>			
+			   	    <div class="fenye" style="top: -3.1rem;">
+			   	    	
+			   	    	<div id="my-course">
+			   	    		<div class="head-title">
+							    <div class="head-title-first"></div>
+							    <div class="head-title-second">我的课程</div>
+							   	<div class="head-title-third"></div>
+						    </div>
+					   	   
+					   	    <div class="picture">
+							    <div class="pic" style="background: url(img/meat.jpg) no-repeat;background-size: 100% 100%;"></div>			  		       	  
+							</div>	
+							
+							     <!--未添加运动-->
+							 
+							<div id="no-sport-p">
+								<p>您还没有添加任何运动</p>
+								<p>请去课程区找一些您喜欢的课程吧</p>
+							</div>
+							
+						
+							      <!--我的课程展示-->
+							<div id="course-show">					
+								<ul>
+									<li>已预约课程</li>
+									<li>已上课程</li>
+									<li>已取消课程</li>
+									<li>已旷课程</li>
+								</ul>
+								<div></div>
+								<div>							
+									<div class="no-class">您还没有上过课程</div>
+									<div class='course-list-style'>
+										<div>
+											<p>8月</p>
+											<p>25</p>
+											<p>10:00-12:00</p>
+										</div>
+										<div>
+											<p>鱼人马甲</p>
+											<p><span>教练:&nbsp;&nbsp;</span><span>Mike</span></p>
+											<p><span>地点:&nbsp;&nbsp;</span><span>城西银泰</span></p>
+										</div>
+										<div class="pingjia">
+											评价
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="no-class">您还没有取消过课程</div>
+								</div>
+								<div>
+									<div class="no-class">您还没有旷过课程</div>
+								</div>								
+							</div>
+							
+							<div id="add-sport-btn">添加运动</div>	
+							
+							        <!--教练评价-->
+							        
+							<div id="pingjiajiemian">							
+								    <div class="head-title">
+									    <div class="head-title-first"></div>
+									    <div class="head-title-second">用户评价</div>
+									   	<div class="head-title-third"></div>
+							        </div>
+							        <div class="pingjiakuang" style="margin-top: 0.3rem;">
+							        	<div>课程满意度</div>
+							            <div class="pingjia-xinxin" style="margin-left: 0.2rem;">
+							            	 <img src="img/xinxin-white_07.png"/>
+							            	 <img src="img/xinxin-white_07.png"/>
+							            	 <img src="img/xinxin-white_07.png"/>
+							            	 <img src="img/xinxin-white_07.png"/>
+							            	 <img src="img/xinxin-white_07.png"/>
+							            </div>							            
+							        </div>
+							        <div class="pingjiakuang">
+							        	<div>服务态度</div>
+							        	<div class="pingjia-xinxin" style="margin-left: 0.5rem;">
+							            	<img src="img/xinxin-white_07.png"/>
+							            	<img src="img/xinxin-white_07.png"/>
+							            	<img src="img/xinxin-white_07.png"/>
+							            	<img src="img/xinxin-white_07.png"/>
+							            	<img src="img/xinxin-white_07.png"/>
+							            </div>
+							        </div>						        
+							        <div class="liuyankuang">
+							        	<textarea placeholder="写点评价吧，对其他小伙伴会有点帮助哦"/></textarea>
+							        </div>
+							        
+							        <div id="submit">提交</div>
+							        
+							</div> 
+							
+							
+							    <!--一周课程-->
+							<div id="week-sportscourse">
+								<div style="position: relative;width: 100%;height: 100%;">
+									<div class="head-title">
+									    <div class="head-title-first"></div>
+									    <div class="head-title-second">一周课程</div>
+									   	<div class="head-title-third"></div>
+							        </div>
+						   	        <div id="week-date">
+						   	        	
+						   	        </div>
+						   	        
+						   	        <div id="sport-table">				   	        			   	        	
+						   	        </div>
+						   	        
+						   	               <!--运动简介-->
+						   	        
+						   	        <div id="sport-imformation">
+						   	        	<div class="head-title">
+										    <div class="head-title-first"></div>
+										    <div class="head-title-second">课程详情</div>
+										   	<div class="head-title-third"></div>
+									   	</div>
+									   	
+										<div class="picture">
+										    <div class="pic" style="background: url(img/meat.jpg) no-repeat;background-size: 100% 100%;"></div>			  		       	  
+										</div>	
+										
+										<div id="sport-imformation-basic">											
+											<div style="position: relative;">
+												<p><span>课程:</span><span></span></p>
+												<p><span>教练:</span><span></span></p>
+												<p><span>难易程度:</span><span></span></p>
+												<div id="buy-now">立刻预约</div>
+											</div>
+											<div>
+												<p>课程简介</p>
+												<p></p>
+											</div>
+										</div>
+										
+										<div id="no-chat">
+											<p>抱歉，还没有评论</p>								
+										</div>
+										
+										<div id="has-chat">
+											
+										</div>
+									
+								    </div>						   	        
+								</div>								
+							</div>
+			   	    	</div>			   	     										
+					</div>
+			   </div>
+			   
+			             <!--会员卡-->
+			   
+			            <!--初次会员-->
+		       <div class="choose-area"><span>我的会员卡</span><span class="white-right"></span>
+		       	    <div class="fenye" style="top: -4.1rem;">
+		       	    	<div id="no-vip">
+		       	    		<div class="head-title">
+						   	    <div class="head-title-first"></div>
+						   	    <div class="head-title-second">99团操月卡</div>
+						   	    <div class="head-title-third"></div>
+					        </div>
+					       
+					       <div class="picture">
+					       	    <div class="pic"> </div>
+					       	    <div class="mask"></div>
+					       	    <div id="pic-font">
+						       	  	 <p>乐客运动智慧场馆24小时开放，无人值守</p>
+						       	  	 <p>所有场馆开放预约</p>
+						       	  	 <p>场馆环保无毒无害装修建材，先进通风系统</p>
+						       	  	 <p>空气质量检测系统</p>
+					       	  	</div>
+					       </div>					      
+					       					       	  				       	  				       	 			     			     			       
+					       <div class="choose-area" style="width: 7rem;margin: 0 auto;margin-top: 0.4rem;"><span>购买会员卡</span></div>
+			       	       <div class="choose-area2"><span class="no-choose-span"></span><span>1个月</span><span>99.0元</span></div>
+					       <div class="choose-area2"><span class="no-choose-span"></span><span>2个月</span><span>188.0元</span></div>
+					       <div class="choose-area2"><span class="no-choose-span"></span><span>3个月</span><span>288.0元</span></div>
+					       <div class="choose-area2"><span class="no-choose-span"></span><span>4个月</span><span>388.0元</span></div>
+					       <p id="tishiyu"><span>注意:</span><span>您正在购买会员卡，请核对信息后点击确定</span></p>
+					       <div id="no-pay">您还没有选择</div>
+					       
+					       <div id="buy">立刻购买</div>
+		       	    	</div>
+		       	    	
+		       	    	<!--会员信息提示-->
+		       	    	<div id="become-vip-comfirm">
+		       	    		<div class="head-title">
+						   	    <div class="head-title-first"></div>	
+						   	    <div class="head-title-second">健康提示</div>
+						   	    <div class="head-title-third"></div>
+					        </div>
+					       
+					       <div id="get-password">
+					       	  <p>
+					       	     <span>入场密码：</span><span></span>
+					       	  </p>
+					       </div>	
+					       
+					       <div id="sport-tishi">
+					       	   <div>注意事项:</div>
+					       	  <p>
+					       	  	<span>1.</span><span>必要的热身活动</span>
+					       	  </p>
+					       	  <p>
+					       	  	当肌肉松弛时，它也更容易拉伸和扩展，做一些热身活动可以使你减少受伤的可能
+					       	  </p>
+					       	   <p>
+					       	  	<span>2.</span><span>必要的热身活动</span>
+					       	  </p>
+					       	  <p>
+					       	  	当肌肉松弛时，它也更容易拉伸和扩展，做一些热身活动可以使你减少受伤的可能
+					       	  </p>
+					       	   <p>
+					       	  	<span>3.</span><span>必要的热身活动</span>
+					       	  </p>
+					       	  <p>
+					       	  	当肌肉松弛时，它也更容易拉伸和扩展，做一些热身活动可以使你减少受伤的可能
+					       	  </p>
+					       	   <p>
+					       	  	<span>4.</span><span>必要的热身活动</span>
+					       	  </p>
+					       	  <p>
+					       	  	当肌肉松弛时，它也更容易拉伸和扩展，做一些热身活动可以使你减少受伤的可能
+					       	  </p>
+					       </div>
+					       					       	  				       	  				       	 			     			     			       
+					       				       
+					    </div>
+		       	    	
+		       	    	<!--以是会员-->
+		       	    	<div id="on-vip">
+		       	    		<div class="head-title">
+						   	    <div class="head-title-first"></div>
+						   	    <div class="head-title-second">操月会员卡</div>
+						   	    <div class="head-title-third"></div>
+					        </div>
+					       
+					       <div class="picture">
+					       	    <div class="pic" style="background:url(img/jinashengfang_02.jpg) no-repeat;"> </div>
+					       	    <div class="mask2"></div>
+					       	    <div id="vip-card"></div>
+					       </div>					      
+					       					       	  				       	  				       	 			     			     			       
+					       <div class="choose-area choose-area3" style="margin-top: 0.4rem;"><span>入场密码</span><span class="vip-imformation"></span></div>
+			       	       <div class="choose-area choose-area3"><span>会员卡名称</span><span class="vip-imformation"></span></div>
+					       <div class="choose-area choose-area3"><span>离到期天数</span><span class="vip-imformation"></span></div>
+					       <div class="choose-area choose-area3"><span>续费时间</span><span class="vip-imformation"></span></div>				     
+					       
+					       <div id="continue-vip" style="margin-top: 1rem;">我要续费</div>
+		       	    	</div>
+		       	       
+		       	    </div>	       		 
+		       </div>
+		       
+		                 <!--健康管理-->
+		       
+		       <div class="choose-area"><span>健康管理</span><span class="white-right"></span>
+		       	   <div class="fenye" style="top: -5.1rem;">
+		       	   	  	<div class="head-title">
+					   	    <div class="head-title-first"></div>
+					   	    <div class="head-title-second">健康管理</div>
+					   	    <div class="head-title-third"></div>
+				       </div>	
+				       
+				       <div class="choose-area" style="margin-top: 1rem;"><span>身高</span><input type="text" placeholder="请输入身高"/><span class="shuruzhi"></span></div>
+				       <div class="choose-area"><span>体重</span><input type="text" placeholder="请输入体重"/><span class="shuruzhi"></span></div>
+				       <div class="choose-area"><span>肌肉含量</span><input type="text" placeholder="请输入肌肉含量" style="margin-left: 0.4rem;"/><span class="shuruzhi"></span></div>
+				       <div class="choose-area"><span>体质比</span><input type="text" placeholder="请输入体质比" style="margin-left: 0.7rem;"/><span class="shuruzhi"></span></div>			       
+				       <div id="comfirm"></div>
+				       <div id="store">保存</div>				       
+		       	   </div>
+		       </div>
+		          
+		                <!--有问有答-->
+		       
+			   <div class="choose-area"><span>有问有答</span><span class="white-right"></span>
+			   	   <div class="fenye" style="top: -6.1rem;">
+				   	  	<div class="head-title">
+					   	    <div class="head-title-first"></div>	
+					   	    <div class="head-title-second">我的课程</div>
+					   	    <div class="head-title-third"></div>
+				       </div>	
+				       <div class="question">
+				       	   <span>问:</span>
+				       	   <span>需要做热身运动吗？</span>
+				       </div>
+				       <div class="ansewer">
+				       	    <span>答:</span>
+				       	    <span>当肌肉越松弛时，他们也更容易被驾驭和扩展，做这些运功将使你减少受伤机会所以需要做必要的热身运动</span>
+				       </div>
+				        <div class="question">
+				       	   <span>问:</span>
+				       	   <span>需要做热身运动吗？</span>
+				       </div>
+				       <div class="ansewer">
+				       	    <span>答:</span>
+				       	    <span>当肌肉越松弛时，他们也更容易被驾驭和扩展，做这些运功将使你减少受伤机会所以需要做必要的热身运动</span>
+				       </div>
+				        <div class="question">
+				       	   <span>问:</span>
+				       	   <span>需要做热身运动吗？</span>
+				       </div>
+				       <div class="ansewer">
+				       	    <span>答:</span>
+				       	    <span>当肌肉越松弛时，他们也更容易被驾驭和扩展，做这些运功将使你减少受伤机会所以需要做必要的热身运动</span>
+				       </div>
+				   	</div>
+			   </div>		   
+			</div>		 
+		</div>
+			   		
+	</body>
+	<script>
+				
+//		白右标签
+		$(".white-right").click(function(){	
+			$(".fenye").css("display","none");
+			$(this).next().css("display","block");
+			$(this).next().find("#my-course").css("display","block");
+			$(".yidong").css("left","-100%");		
+			$(".choose-area>input").show();
+			$(".choose-area>input").val("");
+			$(".shuruzhi").text("");			
+		});
+		
+		
+//		返回
+		$(".head-title-first").click(function(){
+			var _left = parseInt($(".yidong").css("left"))+$(".yidong").width();	
+			$(this).parent().parent().css("display","none");
+			$("#on-vip").css("display","none"); 
+			$("#no-vip").css("display","none"); 
+			$(".yidong").css("left",_left);
+			coureinti();
+		});
+		
+//		输入框
+		$(".choose-area>input").blur(function(){
+			if($(this).val()!=""){
+				$(this).next().text($(this).val());	
+			    $(this).hide();
+			}		
+		});
+		
+//		保存
+		$("#store").click(function(){
+			var s=[];
+			$(".shuruzhi").each(function(){			
+				if($(this).text()==""){			
+					s.push($(this).prev().prev().text());					
+				}			
+			});	
+			if(s.length!=0){			
+				$("#comfirm").text(s.join("、")+"未输入");
+				$("#comfirm").fadeTo(1000,1);
+				$("#comfirm").fadeTo(1000,0);
+			}else{
+				$(".yidong").css("left","0");
+			}
+		});
+		
+//		会员卡选择
+		$(".choose-area2>span:first-child").click(function(){		 
+			$(".choose-area2>span:first-child").each(function(){			
+				var that=this;
+				$(that).removeClass("on-choose-span");
+			});
+			$(this).toggleClass("on-choose-span");
+		});
+		
+//		买会员界面
+        $(".white-right").eq(1).click(function(){     	    	
+        	var panding =[];     	
+        	$(".no-choose-span").each(function(){
+        		if($(this).hasClass("on-choose-span")){
+        			panding.push($(this));
+        		}
+        	});
+        	if(panding.length!=0){
+        		$("#on-vip").css("display","block"); 		
+        	}else{       
+        		$("#no-vip").css("display","block");       	    
+        	}
+        });
+
+//      买会员 
+        $("#buy").click(function(){          	      	
+        	if($(".no-choose-span").hasClass("on-choose-span")){
+        		if($("#become-vip-comfirm").hasClass("hasbuy")){
+        			$("#on-vip").css("display","none"); 
+			        $("#no-vip").css("display","none");
+	        		$(".yidong").css("left","0");
+	        	}else{
+	        		var getpassword="";
+		        	for (var i=1;i<8;i++) {
+		        		var s=Math.floor(Math.random()*8+1);	         		
+		        		getpassword=getpassword+s;
+		        	}
+	        		$("#no-vip").css("display","none");
+	      	        $("#become-vip-comfirm").css("display","block").addClass("hasbuy");
+	        	    $("#become-vip-comfirm").children("#get-password").find("span").eq(1).text(getpassword);        	       	    
+	        	}    	        	
+        	}else{
+        		$("#no-pay").fadeTo(1000,1);
+        		$("#no-pay").fadeTo(1000,0);
+        	}  
+        	$(".vip-imformation").eq(0).text($("#become-vip-comfirm>#get-password").find("span").eq(1).text());      
+	        $(".vip-imformation").eq(1).text(parseInt($("#no-vip>.choose-area2").children(".on-choose-span").next().next().text())+"元健身月卡");   
+	        $(".vip-imformation").eq(2).text();  
+	        if($(".vip-imformation").eq(3).text()!=""){
+	        	$(".vip-imformation").eq(3).text((parseInt($(".vip-imformation").eq(3).text())+parseInt($("#no-vip>.choose-area2").children(".on-choose-span").next().text())*30)+"天");
+	        }else{
+	        	$(".vip-imformation").eq(3).text((parseInt($("#no-vip>.choose-area2").children(".on-choose-span").next().text())*30)+"天");
+	        }	        
+        });
+        
+        $("#continue-vip").click(function(){
+        	$("#no-vip").css("display","block");
+        	$(".no-choose-span").removeClass("on-choose-span");
+        	$("#on-vip").css("display","none");
+        });
+        
+//      课程界面         
+        $(".white-right").eq(0).click(function(){
+        	if($("#course-show").children('div').eq(0).children().length==0){
+        		$("#no-sport-p").css("display","block");
+      		    $("#add-sport-btn").addClass("add-sport-btn1");
+        	}else{    	
+      		    $("#add-sport-btn").addClass("add-sport-btn2");
+        	}
+        });
+        
+        
+//      添加课程
+        $("#add-sport-btn").click(function(){
+        	$(".yidong").css("left","-200%");
+        	$("#week-sportscourse>div").css("display","block");
+        });
+        
+//      按日期显示不同的运动
+
+        var date1 = new Date();
+        var date2 = date1.getFullYear()+"/"+(date1.getMonth()+1)+"/"+date1.getDate();
+
+        var data = {"鱼人马甲":{"时间":"10:00-12:00","人数":"12","教练":"Mike","日期":"2017/10/11","难易程度":"4","运动简介":"鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲"},
+		            "腹肌撕裂":{"时间":"07:00-08:00","人数":"10","教练":"Jay","日期":"2017/10/12","难易程度":"2","运动简介":"腹肌撕裂鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲"},
+		            "长跑运动":{"时间":"11:00-12:00","人数":"7","教练":"Mirke","日期":"2017/10/13","难易程度":"2","运动简介":"长跑运动鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲"},
+		            "户外登山":{"时间":"09:00-14:00","人数":"7","教练":"Mitke","日期":"2017/10/11","难易程度":"3","运动简介":"户外登山鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲"},
+		            "产后运动":{"时间":"14:00-16:00","人数":"4","教练":"Sike","日期":"2017/10/12","难易程度":"4","运动简介":"产后运动鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲"},
+		            "手臂练习":{"时间":"20:00-22:00","人数":"3","教练":"Join","日期":"2017/10/11","难易程度":"2","运动简介":"手臂练习鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲"},
+		            "引体向上":{"时间":"16:00-17:00","人数":"2","教练":"Mikess","日期":"2017/9/19","难易程度":"3","运动简介":"引体向上鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲鱼人马甲"},
+		}
+		
+		var data1 = window.eval(data);
+              
+        var data2 = [];   //运动，时间，人数，教练，日期，难易程度，简介
+        
+        for (var key in data1) {
+        	var dandata=[];
+        	dandata.push(key);
+        	for (var key2 in data1[key]) {
+        		dandata.push(data1[key][key2]);
+        	}
+        	data2.push(dandata);
+        }
+         
+        for (var i=0;i<data2.length;i++) {
+        	if(data2[i][4]==date2){
+        		$("#sport-table").append("<div class='course-list'><div></div><div></div><div>可预约</div><div class='renweiman'>预约</div></div>");
+        		$(".course-list").find("div:first-child").eq(i).text(data2[i][1]);
+        		$(".course-list").find("div:nth-child(2)").eq(i).text(data2[i][0])
+        		$(".course-list").find("div:nth-child(3)").css({"width":"1rem","text-align":"center"});
+        		$(".course-list").find("div:not(:first)").css("margin-left","0.55rem");
+        	}
+        } 
+        
+//      是否人满
+       
+        var joinnumber=[];     
+        for (var i=0;i<data2.length;i++) {
+        	joinnumber.push(0);
+        }
+
+//      人数满时状态   
+//      $(".course-list").find("div:last-child").click(function(){            
+//      	var maxnumber;
+//      	var index;
+//      	for (var i=0;i<data2.length;i++) {
+//      		if(data2[i][0]==$(this).prev().prev().text()){
+//      			maxnumber=data2[i][2];   
+//      			index=i;
+//      		}
+//      	}
+//      	    
+//   	    if(++joinnumber[index]==maxnumber){
+//   	    	$(this).addClass("renyiman").text("排队");
+//   	    	$(this).prev().text("满员");
+//   	    	alert("您选择的运动人数已满");
+//   	    };
+//      });
+        
+        
+   //    选择运动
+   
+        var chooseSport;       //储存选择的运动
+        var index;
+   
+        $(".course-list").find("div:last-child").click(function(){
+        	if(joinnumber[$(".course-list").find("div:last-child").index($(this))]==1){
+        		alert("您已经选择了这个运动");
+        	}else{
+        		chooseSport=data2[$(".course-list").find("div:last-child").index($(this))];
+        		index=$(".course-list").find("div:last-child").index($(this))       		  
+        		$(".yidong").css("left","-300%");
+        		if($("#has-chat").html()){      		 	
+        	    	$("#no-chat").css("display","block");
+        	    }
+        		var xuanze = $("#sport-imformation-basic").children("div").eq(0).children("p");
+        	    $("#sport-imformation").css("display","block");  
+        	    xuanze.eq(0).children("span").eq(1).text(data2[$(".course-list").find("div:last-child").index($(this))][0]);    
+        	    xuanze.eq(1).children("span").eq(1).text(data2[$(".course-list").find("div:last-child").index($(this))][3]);
+        	    xuanze.eq(2).children("span").eq(1).text(data2[$(".course-list").find("div:last-child").index($(this))][5]);
+        	    $("#sport-imformation-basic").children("div").eq(1).children("p").eq(1).text(data2[$(".course-list").find("div:last-child").index($(this))][6]);  
+        	}       	
+        });
+        
+//      预约界面
+        
+        $("#buy-now").click(function(){
+        	joinnumber[index]++;
+        	$(".yidong").css("left","-200%");
+        	$("#course-show").css("display","block");
+        	$("#course-show").children("div").eq(0).append("<div class='course-list-style'><div><p></p><p></p><p></p></div><div><p></p><p><span>教练:&nbsp;&nbsp;</span><span></span></p><p><span>地点:&nbsp;&nbsp;</span><span>城西银泰</span></p></div></div>");
+        	$(".course-list-style:last-child").children("div").eq(0).children("p").eq(0).text(chooseSport[4].split("/")[1]+"月");
+        	$(".course-list-style:last-child").children("div").eq(0).children("p").eq(1).text(chooseSport[4].split("/")[2]);
+        	$(".course-list-style:last-child").children("div").eq(0).children("p").eq(2).text(chooseSport[1]);
+        	$(".course-list-style:last-child").children("div").eq(1).children("p").eq(0).text(chooseSport[0]);
+        	$(".course-list-style:last-child").children("div").eq(1).children("p").eq(1).find("span").eq(1).text(chooseSport[3]);
+        	$("#no-sport-p").css("display","none");
+        	$("#add-sport-btn").removeClass("add-sport-btn1").addClass("add-sport-btn2");
+        });
+             
+//      我的课程情况
+        function coureinti(){
+        	$("#course-show>ul>li:first-child").addClass("on-my-course-information").siblings().removeClass("on-my-course-information");        
+            $("#course-show").children("div").eq(0).css("display","block");
+            $("#course-show").children("div").not(":first").css("display","none");
+        }
+        
+        coureinti();
+     
+        $(".no-class").each(function(){
+        	if($(this).parent().children("div").length==1){
+        		$(this).css("display","block");
+        	}
+        })
+       
+        
+        $("#course-show>ul>li").click(function(){
+        	$(this).addClass("on-my-course-information").siblings().removeClass("on-my-course-information");
+            $("#course-show").children("div").css("display","none");  	
+        	$("#course-show").children("div").eq($(this).index()).css("display","block");
+        });
+        
+        
+//      评价
+        $(".pingjia").click(function(){
+        	$(".yidong").css("left","-200%");
+        	$("#pingjiajiemian").css("display","block");
+        });
+  
+//       星星点击
+       
+        $(".pingjia-xinxin").find("img").click(function(){     
+        	if($(this).attr("src")=="img/xinxin-white_07.png"){
+        		if($(this).index()!=0){
+	        		if($(this).prev().attr("src")=="img/xinxin-orange_03.png"){
+	        			$(this).attr("src","img/xinxin-orange_03.png");
+	        		}
+	        	}else{
+	        		$(this).attr("src","img/xinxin-orange_03.png");
+	        	}
+        	}else if($(this).attr("src")=="img/xinxin-orange_03.png"){
+        		if($(this).index()!=4){
+        			if($(this).next().attr("src")=="img/xinxin-white_07.png"){
+        				$(this).attr("src","img/xinxin-white_07.png");
+        			}     			
+        		}else{
+        			$(this).attr("src","img/xinxin-white_07.png");
+        		}
+        	}       	
+        }); 
+        
+        $("#submit").click(function(){
+        	$(".yidong").css("left","-100%");
+        	
+        	$(".pingjia-xinxin").find("img").attr("src","img/xinxin-white_07.png");     	
+        	$(".liuyankuang").children("textarea").val("");
+        });
+        
+	</script>
+</html>
